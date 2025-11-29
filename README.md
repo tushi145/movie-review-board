@@ -1,73 +1,68 @@
-# Welcome to your Lovable project
+# 🎬 Movie Review Application
 
-## Project info
+A collaborative full-stack web application for submitting and viewing movie reviews.  
+This project allows users to share their thoughts on movies through a clean and responsive interface.
 
-**URL**: https://lovable.dev/projects/0ec4297d-3bfa-4966-8868-cdbae8efd6bc
+---
 
-## How can I edit this code?
+## 📌 Features
 
-There are several ways of editing your application.
+- ⭐ Submit movie reviews with:
+  - Movie name  
+  - Reviewer name  
+  - Review text  
+  - Rating (1–5 scale)  
+  - Auto-captured timestamp  
 
-**Use Lovable**
+- 📄 View all submitted reviews  
+- 📱 Responsive and modern UI  
+- 🔒 Secure backend storage (Firebase/Supabase)  
+- ⚡ Fast frontend built using Lovable.dev  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0ec4297d-3bfa-4966-8868-cdbae8efd6bc) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🗂️ Database Schema
 
-**Use your preferred IDE**
+The project uses a single table: **`movie_reviews`**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+| Column            | Type         | Description                          |
+|-------------------|--------------|--------------------------------------|
+| `id`              | int8         | Primary key                          |
+| `date_submitted`  | timestamptz  | Timestamp when review was submitted  |
+| `movie_name`      | text         | Name of the movie                    |
+| `reviewer_name`   | text         | Name of the reviewer                 |
+| `review_text`     | text         | Review content                       |
+| `rating`          | int2         | Rating (1–5)                         |
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🛠️ Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### **Frontend**
+- Lovable.dev  
+- HTML, CSS, JavaScript
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### **Backend**
+- Firebase or Supabase  
+- Real-time database support  
+- Secure API routes
 
-# Step 3: Install the necessary dependencies.
-npm i
+### **Version Control**
+- Git & GitHub  
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## 🚀 How It Works
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. User fills in movie details and rating  
+2. Frontend sends the review data to Firebase/Supabase  
+3. Review is stored in the `movie_reviews` table  
+4. All reviews are fetched and displayed instantly  
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📦 Setup Instructions
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/0ec4297d-3bfa-4966-8868-cdbae8efd6bc) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/movie-review-app.git
