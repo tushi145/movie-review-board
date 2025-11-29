@@ -3,6 +3,8 @@
 A collaborative full-stack web application for submitting and viewing movie reviews.  
 This project allows users to share their thoughts on movies through a clean and responsive interface.
 
+> _Part of a full-stack collaboration project (team of two)._
+
 ---
 
 ## 📌 Features
